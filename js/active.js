@@ -57,6 +57,8 @@ jQuery(document).ready(function ($) {
 	$('.speaker_slider').owlCarousel({
 		margin: 75,
 		loop: true,
+    // autoplay: true,
+    // autoplayHoverPause: true,
 		nav: true,
 		navText: ['<i class="fa fa-angle-left"></>', '<i class="fa fa-angle-right"></>'],
 		responsive: {
