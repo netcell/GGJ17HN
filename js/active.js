@@ -3,7 +3,7 @@ jQuery(document).ready(function ($) {
 
 	//countdown timer
 
-	$('.count_down').countdown('2017/01/20', function (event) {
+	$('.count_down').countdown(new Date('Fri Jan 20 2017 20:00:00 GMT+0700 (ICT)'), function (event) {
 		$(this).html(event.strftime('<div class="single_count"><h1>%D</h1><p>Days</p></div><div class="single_count"><h1>%H</h1><p>Hour</p></div><div class="single_count"><h1>%M</h1><p>Minute</p></div><div class="single_count"><h1>%S</h1><p>Secound</p></div>'));
 	});
 	
