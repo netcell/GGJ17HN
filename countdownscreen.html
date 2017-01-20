@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Hanoi Game Jam 2017</title>
+
+        <!-- Favicon -->
+    	<link rel="icon" type="image/png" href="img/img-icons/fevicon.png">
+
+        <!-- custom css -->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+
+    <body class="home">
+
+	<!-- Window Preloader start -->
+	    <div class="loader_wrep">
+            <div class="loader_cell">
+                <div class="loader"></div>
+            </div>
+	    </div>
+	<!-- Window Preloader End -->
+
+<!-- ======= 1.02 Header ======== -->
+
+	<header>
+      <div class="home_area">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-md-10 col-md-offset-1">
+	                    <div class="home_content text-center">
+	               
+                            <div class="count_down clearfix"></div>
+	                        <div class="home_bar"></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+	</header>
+
+<!-- ======= /1.02 Header ======== -->
+
+<!-- ======= 1.04 CTA Area ======== -->
+
+<!-- ======= 1.03 About Area ======== -->
+
+<!-- ======= 1.05 Schedule Area ======== -->
+
+<!-- ======= 1.12 Map Area ======== -->
+
+<!-- ======= 1.07 Speaker Area ======== -->
+
+<!-- ======= 1.08 Testimonial Area ======== -->
+
+<!-- ======= 1.09 Price Area ======== -->
+
+<!-- ======= 1.06 Subscribe Area ======== -->
+
+<!-- ======= 1.11 Faq & Sponsor area Area ======== -->
+
+<!-- ======= 1.13 Footer ======== -->
+
+	<footer>
+		
+	</footer>
+
+<!-- ======= /1.13 Footer ======== -->
+
+    <!-- Google Map Api -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD7CQl6fRhagGok6CzFGOOPne2X1u1spoA"></script>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.12.3.min.js"></script>
+
+    <!-- jQuery Migrate -->
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- waypoint js -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+
+    <!-- Slick -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <!-- counter up -->
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!-- count-down -->
+    <script src="js/count.down.js"></script>
+
+    <!-- Venubox -->
+    <script src="js/venobox.min.js"></script>
+
+    <!-- owl-carousel js -->
+    <script src="js/owl.carousel.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Masonry -->
+    <script src="js/masonry.pkgd.min.js"></script>
+
+    <script src="js/jquery.particleground.min.js"></script>
+
+	<!-- ===== google map script ===== -->
+    <script>
+       var myCenter=new google.maps.LatLng(21.0069869,105.8013164);
+
+        function initialize()
+        {
+        var mapProp = {
+        center:myCenter,
+        scrollwheel: false,
+        zoom:15,
+        zoomControl:false,
+        mapTypeControl:false,
+        streetViewControl:false,
+        mapTypeId:google.maps.MapTypeId.ROADMAP,
+		styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#08213d"},{"lightness":-80},{"saturation":0}]}]
+          };
+
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+        var marker=new google.maps.Marker({
+          position:myCenter,
+          icon:'img/img-icons/map-marker.png'
+          });
+        marker.setMap(map);
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+	<!-- ===== /google map ===== -->
+
+    <!-- active js -->
+    <script src="js/active.js"></script>
+
+    </body>
+</html>

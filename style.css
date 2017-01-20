@@ -117,7 +117,7 @@ input {
 }
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: arial;
 	font-size: 14px;
 	font-weight: 300;
 }
@@ -127,13 +127,15 @@ body {
 }
 
 header {
-	height: 400px;
+	height: 100%;
 	background: url(img/header-bg.jpg);
-	background-size: cover;
-	background-position: center;
+	background-size: contain;
+	background-position: top;
+	background-repeat:no-repeat;
 	position: relative;
 	z-index: 4;
-	border-bottom: 5px solid #d32f2f
+	//border-bottom: 5px solid #d32f2f;
+	    background-color: #26163b;
 }
 
 header:before {
@@ -141,7 +143,7 @@ header:before {
 	content: '';
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, .4);
+	//background: rgba(0, 0, 0, .4);
 	left: 0;
 	top: 0;
 }
@@ -164,14 +166,18 @@ header:before {
 }
 
 .home_content .count_down {
-	display: none
+	//display: none;
+	//padding-top: 25px;
+	    margin-top: -160px;
 }
 
 .home_text {
-	margin-bottom: 35px;
-	color: #c9c9c9;
-	padding: 0 95px;
-	font-size: 16px;
+	margin-bottom: 30px;
+    color: #0f496f;
+    padding: 0 95px;
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
 }
 
 .home_bar {
@@ -307,10 +313,46 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 ***************************************** */
 
 .home header {
-	height: 800px;
-	border-bottom: none
+	min-height: 800px;
+	//min-height: 759px;
+	border-bottom: none;
+	height: 100%;
+}
+.home .home_content .count_down {
+	display: block
+}
+@media only screen and (min-width: 1500px) and (max-width: 2200px) {
+	.home header {
+	min-height: 1080px;
+	}
+	.home_content .count_down {
+    display: block;
+	}
+}
+@media only screen and (min-width: 1101px) and (max-width: 2200px) {
+	.home_content .count_down {
+    display: block;
+	}
+}
+@media only screen and (min-width: 768px) and (max-width: 1100px) {
+	.home_content .count_down {
+    display: none;
+}
+.home header {
+	min-height: 600px;
+	height: 600px!important;
+	}
 }
 
+@media only screen and (min-width: 100px) and (max-width: 768px) {
+	.home_content .count_down {
+    display: none;
+}
+.home header {
+	height: 300px!important;
+	min-height: 300px!important;
+	}
+}
 .top_menu_area {
 	position: absolute;
 	top: 25px;
@@ -522,10 +564,10 @@ nav#navbar {
 	display: none
 }
 
-.home .home_content .count_down {
-	display: block
-}
 
+.single_count:first-child { 
+    //display: none;
+}
 .single_count {
 	width: 130px;
 	display: inline-block;
